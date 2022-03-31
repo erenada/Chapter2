@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     #first mask the ref sequence
     os.chmod('mask_ref_seq.sh', 0o755)
-    subprocess.call("./mask_ref_seq.sh " + output_path + 'SISRS_Run/', shell=True)
+    subprocess.call("../mask_ref_seq.sh " + output_path + 'SISRS_Run/', shell=True)
 
     #generate consensus sequence
     os.chmod('contigs_driver.sh', 0o755)
