@@ -5,7 +5,7 @@
 #SBATCH --ntasks-per-node=1   # processor core(s) per node - only use 1 for this!
 #SBATCH --mail-user="erenada@uri.edu" #CHANGE to user email address
 #SBATCH --mail-type=ALL
-#SBATCH --array=[0-11]%4 #bracketed numbers indicate number of total jobs you need(taxa-1) - 0 based, inclusive; following number = simultaneous
+#SBATCH --array=[0-32]%4 #bracketed numbers indicate number of total jobs you need(taxa-1) - 0 based, inclusive; following number = simultaneous
 #SBATCH -o %x_%A_%a.out
 #SBATCH -e %x_%A_%a.err
 cd $SLURM_SUBMIT_DIR
